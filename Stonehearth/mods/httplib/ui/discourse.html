@@ -1,0 +1,22 @@
+<script type="text/x-handlebars" data-template-name="discourseView">
+{{#unless view.hide}}
+<div class="discourseView">
+   <h1>Latest Discourse Headlines</h1>
+   <div class="body">
+      <ul>
+      {{#each topic in view.data.topic_list.topics}}
+         <li>
+            <span class="title">{{topic.title}}</span><br />
+            <span class="author">(by
+               {{#if topic.user_avatar}}
+                  <img {{bind-attr src="topic.user_avatar"}} />
+               {{/if}}
+               {{topic.last_poster_username}})
+            </small>
+         </li>
+      {{/each}}
+      </ul>
+   </div>
+</div>
+{{/unless}}
+</script>

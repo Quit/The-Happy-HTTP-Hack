@@ -1,0 +1,32 @@
+{
+   "info" :{
+      "name" : "HTTP Library Example Mod",
+      "author": "RepeatPan",
+      "client_only": true,
+      "version" : 3
+   },
+   
+   "ui": {
+      "html": [
+         "file(ui/discourse.html)"
+      ],
+      "js": [
+         "file(ui/discourse.js)"
+      ],
+      "less": [
+         "file(ui/discourse.less)"
+      ]
+   },
+
+   "functions": {
+      "get_latest": {
+         "controller": "file(call_handlers/callbacks.lua)",
+         "endpoint": "client"
+      },
+
+      "get_avatar": {
+         "controller": "file(call_handlers/callbacks.lua)",
+         "endpoint": "client"
+      }
+   }
+}

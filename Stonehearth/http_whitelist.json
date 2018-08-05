@@ -1,0 +1,17 @@
+{
+  "allow": [
+    {
+      "hostname": "discourse.stonehearth.net",
+      "schemes": [ "https" ],
+      "methods": [ "GET" ],
+      "paths": [ "/latest.json", "/user_avatar/" ],
+      "ports": [ 443 ]
+    },
+    {
+      "hostname": "avatars.discourse.org",
+      "schemes": [ "https" ],
+      "methods": [ "GET" ],
+       "ports": [ 443 ]
+    }
+  ]
+}
